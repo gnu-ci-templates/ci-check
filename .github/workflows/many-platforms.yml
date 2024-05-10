@@ -408,6 +408,7 @@ jobs:
             pwd
             ls -l
             export CPPFLAGS="-Wall"
+            export CC="gcc -m64"
             ./build-on.sh '${{ env.package }}' '' 'make'
       # Doc: https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
       #      https://github.com/actions/upload-artifact?tab=readme-ov-file#usage
