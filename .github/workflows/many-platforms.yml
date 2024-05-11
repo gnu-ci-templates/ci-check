@@ -111,10 +111,10 @@ jobs:
         with:
           name: logs-linux-gnu-ubuntu
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-linux-gnu-centos:
@@ -152,10 +152,10 @@ jobs:
         with:
           name: logs-linux-gnu-centos
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-linux-alpine:
@@ -193,10 +193,10 @@ jobs:
         with:
           name: logs-linux-alpine
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-macos:
@@ -234,10 +234,10 @@ jobs:
         with:
           name: logs-${{ matrix.os }}
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-freebsd:
@@ -280,10 +280,10 @@ jobs:
         with:
           name: logs-freebsd
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-netbsd:
@@ -327,10 +327,10 @@ jobs:
         with:
           name: logs-netbsd
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-openbsd:
@@ -372,10 +372,10 @@ jobs:
         with:
           name: logs-openbsd
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-solaris11:
@@ -417,10 +417,10 @@ jobs:
         with:
           name: logs-solaris11
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-solaris11-omnios:
@@ -462,10 +462,10 @@ jobs:
         with:
           name: logs-solaris11-omnios
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-cygwin:
@@ -524,10 +524,10 @@ jobs:
         with:
           name: logs-cygwin${{ matrix.bitness }}
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-mingw:
@@ -589,10 +589,10 @@ jobs:
         with:
           name: logs-mingw${{ matrix.bitness }}
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   check-msvc:
@@ -689,10 +689,10 @@ jobs:
         with:
           name: logs-msvc${{ matrix.bitness }}
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
   # This is not a platform-specific test, but very useful for finding bugs.
@@ -729,9 +729,9 @@ jobs:
         with:
           name: logs-sanitized
           path: |
-            ${{ env.package }}-*/config.cache
-            ${{ env.package }}-*/config.log
-            ${{ env.package }}-*/config.status
-            ${{ env.package }}-*/log[123]
+            ${{ env.package }}-*/build/config.cache
+            ${{ env.package }}-*/build/config.log
+            ${{ env.package }}-*/build/config.status
+            ${{ env.package }}-*/build/log[123]
           retention-days: 7
           overwrite: true
