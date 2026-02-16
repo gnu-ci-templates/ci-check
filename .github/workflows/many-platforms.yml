@@ -132,7 +132,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tarball
-      - uses: addnab/docker-run-action@v3
+      - uses: maus007/docker-run-action-fork@v1
         with:
           image: centos:7
           options: -v ${{ github.workspace }}:/work
@@ -175,7 +175,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tarball
-      - uses: addnab/docker-run-action@v3
+      - uses: maus007/docker-run-action-fork@v1
         with:
           image: almalinux:9
           options: -v ${{ github.workspace }}:/work
@@ -220,7 +220,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tarball
-      - uses: addnab/docker-run-action@v3
+      - uses: maus007/docker-run-action-fork@v1
         with:
           image: alpine:3
           options: -v ${{ github.workspace }}:/work
@@ -801,7 +801,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tarball
-      - uses: addnab/docker-run-action@v3
+      - uses: maus007/docker-run-action-fork@v1
         with:
           # A Docker container with the newest clang release, based on Debian 13.
           image: tuxmake/clang-21:latest
